@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Presskits on Anthony&#39;s website</title>
-    <link>https://anthony.lethuillier.net/presskits/</link>
-    <description>Recent content in Presskits on Anthony&#39;s website</description>
+    <title>Presskits on Camembear Games</title>
+    <link>https://camembeargames.com/presskits/</link>
+    <description>Recent content in Presskits on Camembear Games</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-de</language>
-    <atom:link href="https://anthony.lethuillier.net/presskits/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://camembeargames.com/presskits/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
