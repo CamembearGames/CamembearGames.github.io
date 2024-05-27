@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://anthony.lethuillier.net/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2023-10-07T07:07:07+01:00</lastmod>
   </url><url>
-    <loc>https://anthony.lethuillier.net/blog/2023-10-7-in-the-newspaper/</loc>
+    <loc>http://localhost:1313/blog/2023-10-7-in-the-newspaper/</loc>
     <lastmod>2023-10-07T07:07:07+01:00</lastmod>
   </url><url>
-    <loc>https://anthony.lethuillier.net/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-10-07T07:07:07+01:00</lastmod>
   </url><url>
-    <loc>https://anthony.lethuillier.net/blog/2023-10-1-berlin-game-jam/</loc>
+    <loc>http://localhost:1313/blog/2023-10-1-berlin-game-jam/</loc>
     <lastmod>2023-10-01T07:07:07+01:00</lastmod>
   </url><url>
-    <loc>https://anthony.lethuillier.net/blog/2023-8-30-hathora-game-jam/</loc>
+    <loc>http://localhost:1313/blog/2023-8-30-hathora-game-jam/</loc>
     <lastmod>2023-08-30T07:07:07+01:00</lastmod>
   </url><url>
-    <loc>https://anthony.lethuillier.net/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/presskits/godsanddice/</loc>
+    <loc>http://localhost:1313/presskits/godsanddice/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/presskits/</loc>
+    <loc>http://localhost:1313/presskits/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/sitesections/</loc>
+    <loc>http://localhost:1313/sitesections/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/sitesections/creationos/</loc>
+    <loc>http://localhost:1313/sitesections/creationos/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/sitesections/terraflip/</loc>
+    <loc>http://localhost:1313/sitesections/terraflip/</loc>
   </url><url>
-    <loc>https://anthony.lethuillier.net/sitesections/puppyrescue/</loc>
+    <loc>http://localhost:1313/sitesections/puppyrescue/</loc>
   </url>
 </urlset>

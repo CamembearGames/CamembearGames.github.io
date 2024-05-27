@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sitesections on Anthony&#39;s website</title>
-    <link>https://anthony.lethuillier.net/sitesections/</link>
+    <link>http://localhost:1313/sitesections/</link>
     <description>Recent content in Sitesections on Anthony&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-de</language>
-    <atom:link href="https://anthony.lethuillier.net/sitesections/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/sitesections/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
