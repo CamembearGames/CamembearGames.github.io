@@ -2,9 +2,9 @@
   --background: #2B2D42;
   --gray: #8D99AE;
   --green: #E8DCB9;
-  --arrow-green: #93c0a4ff;
+  --arrow-green: #93c0a4;
   --light-arrow: #5b4110;
-  --red-marron: #632811;
+  --red: #cd5656;
   --letter-color: #df945d;
   --medium-brown: #7e5830;
 }
@@ -36,15 +36,14 @@ html {
 body{
     
   display: block;
-  margin: 8px;
   font-size: 12px;
 }
 
-header {
+headersdfsd {
   margin-bottom: 1rem;
-  background-image: url("/Banner.png");
-  height: 800px;
-  height: 351px;
+  background-image: url("/Logo.png");
+  height: 250px;
+  background-size: 250px;
   background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
   background-repeat:no-repeat;
 }
@@ -53,8 +52,10 @@ footer {
   margin-top: 1rem;
   padding-bottom: 1rem;
   background-color: var(--background);
-  font-size: 16px;
-    color: var(--green);
+  font-size: 12px;
+  color: var(--red);
+  max-width: 1400px;
+  margin-left: auto; margin-right: auto;
 }
 
 a {
@@ -82,47 +83,69 @@ img.resize {
 /* Containers */
 .content {
   background-color: var(--background);
-  margin-bottom: 4em;
+  margin: 3em 3em 3em 3em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
-  padding: 0 1ch;
   word-wrap: break-word;
-  
 }
 
-nav ul {
+header
+{
+  position: relative;
+  margin: 3em 3em 3em 3em;
+  min-height: 200px;
+}
+
+.links li
+{
+    float: left;
+    height: 200px;
+    line-height: 200px;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-transform: capitalize;
+    text-align: center;
+    align-items: center;
+    color: var(--green);
+}
+
+.links.right li
+{
+    float: right;
+}
+
+
+.links ul {
   font-family: 'Blackout', sans-serif;
-  display: flex;
-  gap: 2px;
   list-style-type: none;
   padding: 0em;
   padding-bottom: 0em;
   font-size: 26px;
-  border-bottom: 3px solid var(--gray);
-
+  margin: 0px;
 }
 
 
 li {
   background-color: var(--background);
-  text-transform: capitalize;
-  text-align: center;
-  flex: 1;
-  margin: 0.5rem 0rem 0.5rem 0rem;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+
 }
+
+
 
 #maincolumn
 {
     
-    margin: 1rem 0rem 0rem 0rem;
+margin: 3em 3em 3em 3em;
+max-width: 1000px;
+    margin: auto;
 }
 
 ul a
 {
     color: var(--green);
 }
+
+
 
 .blog
 {
@@ -157,19 +180,25 @@ ul a
     font-family: 'Blackout', sans-serif;
     color: var(--green);
     background: var(--background);
-    font-size: 18px;
+    font-size: 24px;
     padding-top: 0.25em;
     padding-left: 0.5em;
-    border-bottom: 3px solid var(--gray);
     margin-bottom: 1em;
     margin-top: 1em;
-
-
+    max-width: 1400px;
+    margin-left: auto; margin-right: auto;
 }
 
-h2
+h1
 {
     margin: 0;
+    border-top: 3px solid var(--green);
+    border-bottom: 3px solid var(--green);
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+
 }
 
 
@@ -209,8 +238,6 @@ a.imagelink {
      margin: 0 auto;
       border-radius: 25px;
     padding: 1em;
-    margin-top: -500px;
-    margin-bottom: 300px;
     z-index: 2;
     position: relative;
 
@@ -242,13 +269,6 @@ a.imagelink {
 
 }
 
-.main_text
-{
-    color: var(--green);
-    font-size: 18px;
-    text-align:justify;
-    margin-bottom: 1em;
-}
 
 .main_text a
 
@@ -275,7 +295,8 @@ a.imagelink {
 
 .main_text h2{
     text-align:center;
-    text-decoration: underline var(--gray);;
+    padding: 0 0 4px;
+    
 
 }
 
@@ -294,10 +315,9 @@ a.imagelink {
 {
     background-color:  #8d99aee5;
     width:600px;
-     margin: 0 auto;
-      border-radius: 25px;
+    margin: 0 auto;
+    border-radius: 25px;
     padding: 1em;
-    margin-top: -300px;
     margin-bottom: 100px;
     z-index: 2;
     position: relative;
@@ -305,7 +325,15 @@ a.imagelink {
 }
     
 }
-    
+
+.links a:hover 
+{ 
+    color: var(--red);
+    border-bottom: 3px solid var(--red);
+    padding: 0 0 4px;
+} 
+
+
 .center
 {
     width: 650px;
@@ -315,7 +343,109 @@ display: block;
     
 .main_text p img
 {
-    width:600px;
-    height:auto;
+    max-width:600px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
 }
 
+.menu_logo
+{
+    height: 200px;
+    margin-right: 3em;
+}
+
+.menu_sm
+{
+      height: 40px;
+  
+}
+
+
+.pk
+{
+  color:  var(--green);
+  font-family: 'Syne-Regular', sans-serif;
+  font-size: 18px;
+  max-width: 1400px;
+  margin-left: auto; margin-right: auto;
+    text-align: justify;
+
+}
+
+.pk-row
+{
+    display: flex;
+}
+
+
+.pk-flex-child-1 {
+    flex: 0 0 25%;
+} 
+
+.pk-flex-child-1 img
+{
+
+}
+
+.pk-flex-child-2 {
+    flex: 0 0 25%;
+    /*border: 2px solid var(--green);*/
+}  
+
+
+.pk-flex-child-3 {
+    flex: 0 0 50%;
+}  
+
+.pk h3
+{
+    border-bottom: 3px solid var(--green);
+}
+
+
+
+.pk a
+{
+    color: var(--green);
+}
+
+.pk a:hover 
+{ 
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+    padding: 0 0 1px;
+} 
+
+.pk_factsheet h3
+{
+    
+    color:  var(--red);
+    border-bottom: 0px  var(--red);
+}
+
+.main_text h2 a
+{ 
+    color: var(--background);
+     background: var(--green);
+    padding: 10px 20px 10px 20px; 
+    border-radius: 25px;
+
+} 
+
+.main_text h2 a:hover 
+{ 
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+    padding: 10px 20px 10px 20px; 
+} 
+
+.main_text
+{
+  color:  var(--green);
+  font-family: 'Syne-Regular', sans-serif;
+  font-size: 18px;
+  max-width: 1400px;
+  margin-left: auto; margin-right: auto;
+  text-align: justify;
+}
