@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Puppy Rescue won the 2023 Hathora game Jam on Anthony&#39;s website</title>
-    <link>http://localhost:1313/blog/2023-8-30-hathora-game-jam/</link>
+    <link>https://anthony.lethuillier.net/blog/2023-8-30-hathora-game-jam/</link>
     <description>Recent content in Puppy Rescue won the 2023 Hathora game Jam on Anthony&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-de</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/2023-8-30-hathora-game-jam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anthony.lethuillier.net/blog/2023-8-30-hathora-game-jam/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
