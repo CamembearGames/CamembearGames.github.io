@@ -49,14 +49,11 @@ nav
 {
     height: 80px;
     width: 100%;
-
 }
 
-
-
 label.logo img{
-    padding: 0 100px;
-    height: 200px;
+    padding: 0px;
+    height: 160px;
     margin-right: 3em;
 }
 
@@ -64,8 +61,10 @@ nav ul
 {
     float:right;
     margin-right: 20px;
+    left: 0;
     z-index: 1;
 }
+
 
 nav ul li
 {
@@ -88,7 +87,7 @@ nav ul li
 
 .closebtn
 {
-    font-size: 30px;
+    font-size: 40px;
     float: center;
     line-height: 80px;
     cursor: pointer;
@@ -96,6 +95,10 @@ nav ul li
     color: var(--red);
 }
 
+.separator
+{
+    width: 100px;
+}
 #check
 {
     display: none;
@@ -106,6 +109,13 @@ nav ul li
     display: none;
 }
 
+.menu_sm
+{
+    height: 40px;
+    filter:  brightness(0) saturate(100%) invert(99%) sepia(29%) saturate(1143%) hue-rotate(317deg) brightness(100%) contrast(82%);
+}
+
+
 @media (max-width: 960px) 
 {
     label.logo
@@ -113,6 +123,7 @@ nav ul li
         width:125px;
         display: block;
     }
+    
     label.logo img
     {
 
@@ -131,8 +142,6 @@ nav ul li
 
 @media (max-width: 800px)
 {
-    
-    
     .checkbtn
     {
         display: block;
@@ -144,14 +153,17 @@ nav ul li
         display: block;
 
     }
+    
+
+    
     ul
     {
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         background-color: var(--green);
         top: 0px;
-        left: -100%;
+        top: -100%;
         text-align: center;
         transition: all .5s;
     }
@@ -165,6 +177,12 @@ nav ul li
     
     }
     
+    .li_sm
+    {
+        display: inline-block;
+        margin: 0px 0;
+    }
+    
     nav ul li a
     {
         font-size: 20px;
@@ -172,7 +190,20 @@ nav ul li
     }
     
     #check:checked ~ ul{
-        left: 0;
+        top: 0;
+        
+    }
+    
+    .menu_sm
+    {
+        height: 40px;
+        filter: brightness(0) saturate(100%) invert(15%) sepia(10%) saturate(2095%) hue-rotate(197deg) brightness(91%) contrast(88%);
+    }
+    
+    .separator
+    {
+
+        display: none;
     }
     
 }
@@ -220,7 +251,11 @@ img.resize {
 header
 {
   position: relative;
-  min-height: 100px;
+  min-height: 160px;
+  margin-top: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2em 2em 2em 2em;
 }
 
 /*.links li
@@ -259,7 +294,9 @@ header
     
 margin: 3em 3em 3em 3em;
 max-width: 1000px;
-    margin: auto;
+margin: auto;
+    
+    padding: 2em 2em 2em 2em;
 }
 
 ul a
@@ -304,7 +341,7 @@ ul a
     background: var(--background);
     font-size: 24px;
     padding-top: 0.25em;
-    padding-left: 0.5em;
+
     margin-bottom: 1em;
     margin-top: 0.5em;
     max-width: 1400px;
@@ -444,10 +481,16 @@ a.imagelink {
     display: block;
 }
 
-.menu_sm
-{
-      height: 40px;
-  
+
+.icon {
+  display: inline-block;
+  width: 48px;
+  height: 40px;
+  background-size: cover;
+}
+
+.icon-bike {
+  background-image: url(/socialMedia/Twitter.svg);
 }
 
 
