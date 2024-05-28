@@ -482,6 +482,12 @@ a.imagelink {
     display: block;
 }
 
+    
+.main_text p
+{
+  padding-top: 1em;  
+}
+
 
 .icon {
   display: inline-block;
@@ -596,7 +602,7 @@ h2
   color:  var(--green);
   font-family: 'Syne-Regular', sans-serif;
   font-size: 18px;
-  max-width: 1400px;
+  max-width: 1000px;
   margin-left: auto; margin-right: auto;
   text-align: justify;
 }
@@ -629,3 +635,4 @@ h2
     /*border: 2px solid var(--green);*/
     }  
 }
+
