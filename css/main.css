@@ -115,6 +115,16 @@ nav ul li
     filter:  brightness(0) saturate(100%) invert(99%) sepia(29%) saturate(1143%) hue-rotate(317deg) brightness(100%) contrast(82%);
 }
 
+header
+{
+  position: relative;
+  min-height: 160px;
+  margin-top: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2em 2em 2em 2em;
+}
+
 
 @media (max-width: 960px) 
 {
@@ -142,6 +152,10 @@ nav ul li
 
 @media (max-width: 800px)
 {
+    header
+    {
+        min-height: 100px;
+    }
     .checkbtn
     {
         display: block;
@@ -153,9 +167,6 @@ nav ul li
         display: block;
 
     }
-    
-
-    
     ul
     {
         position: fixed;
@@ -248,15 +259,7 @@ img.resize {
   word-wrap: break-word;
 }
 
-header
-{
-  position: relative;
-  min-height: 160px;
-  margin-top: 20px;
-    max-width: 1000px;
-    margin: auto;
-    padding: 2em 2em 2em 2em;
-}
+
 
 /*.links li
 {
@@ -285,8 +288,6 @@ header
   font-size: 26px;
   margin: 0px;
 }
-
-
 
 
 #maincolumn
@@ -522,6 +523,7 @@ a.imagelink {
 
 .pk-flex-child-2 {
     flex: 0 0 25%;
+    margin-left: 1em;
     /*border: 2px solid var(--green);*/
 }  
 
@@ -540,7 +542,10 @@ h2
     margin: 0.5em;
 }
 
-
+.pk h2
+{
+    margin-left: 0em;
+}
 .pk a
 {
     color: var(--green);
@@ -593,4 +598,26 @@ h2
   max-width: 1400px;
   margin-left: auto; margin-right: auto;
   text-align: justify;
+}
+
+
+@media (max-width: 800px)
+{
+    .pk-row
+{
+    display: block;
+}
+    
+    .pk-row img
+{
+    
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+    
+    .pk-flex-child-2 {
+    margin-left: 0em;
+    /*border: 2px solid var(--green);*/
+    }  
 }
