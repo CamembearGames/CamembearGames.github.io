@@ -24,6 +24,13 @@
     src: url('/fonts/blackout_two_am-webfont.woff') format('truetype');
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
 
 html {
   color: #232333;
@@ -32,20 +39,142 @@ html {
   background-color: var(--background);
 }
 
-
 body{
     
   display: block;
   font-size: 12px;
 }
 
-headersdfsd {
-  margin-bottom: 1rem;
-  background-image: url("/Logo.png");
-  height: 250px;
-  background-size: 250px;
-  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
-  background-repeat:no-repeat;
+nav
+{
+    height: 80px;
+    width: 100%;
+
+}
+
+
+
+label.logo img{
+    padding: 0 100px;
+    height: 200px;
+    margin-right: 3em;
+}
+
+nav ul
+{
+    float:right;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+nav ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin : 0 5px;
+}
+
+.checkbtn
+{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    color: var(--green);
+    
+}
+
+.closebtn
+{
+    font-size: 30px;
+    float: center;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    color: var(--red);
+}
+
+#check
+{
+    display: none;
+}
+
+#close
+{
+    display: none;
+}
+
+@media (max-width: 960px) 
+{
+    label.logo
+    {
+        width:125px;
+        display: block;
+    }
+    label.logo img
+    {
+
+        padding: 0 ;
+        width:100%;
+        height: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    nav ul li a
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px)
+{
+    
+    
+    .checkbtn
+    {
+        display: block;
+
+    }
+    
+    .closebtn
+    {
+        display: block;
+
+    }
+    ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--green);
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        min-height: 32px;
+    
+    }
+    
+    nav ul li a
+    {
+        font-size: 20px;
+        color: var(--background)
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
 }
 
 footer {
@@ -83,7 +212,6 @@ img.resize {
 /* Containers */
 .content {
   background-color: var(--background);
-  margin: 3em 3em 3em 3em;
   margin-left: auto;
   margin-right: auto;
   word-wrap: break-word;
@@ -92,11 +220,10 @@ img.resize {
 header
 {
   position: relative;
-  margin: 3em 3em 3em 3em;
-  min-height: 200px;
+  min-height: 100px;
 }
 
-.links li
+/*.links li
 {
     float: left;
     height: 200px;
@@ -112,7 +239,7 @@ header
 .links.right li
 {
     float: right;
-}
+}*/
 
 
 .links ul {
@@ -124,11 +251,6 @@ header
   margin: 0px;
 }
 
-
-li {
-  background-color: var(--background);
-
-}
 
 
 
@@ -184,7 +306,7 @@ ul a
     padding-top: 0.25em;
     padding-left: 0.5em;
     margin-bottom: 1em;
-    margin-top: 1em;
+    margin-top: 0.5em;
     max-width: 1400px;
     margin-left: auto; margin-right: auto;
 }
@@ -234,24 +356,14 @@ a.imagelink {
 .signupform
 {
     background-color:  #8d99aee5;
-    width:600px;
-     margin: 0 auto;
-      border-radius: 25px;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 25px;
     padding: 1em;
-    z-index: 2;
     position: relative;
-
-}
-
-.signupformnormal
-{
-    background-color:  #8d99aee5;
-    width:600px;
-     margin: 0 auto;
-      border-radius: 25px;
-    padding: 1em;
-    z-index: 2;
-    position: relative;
+    margin-top: 1em;margin-bottom: 2em;
 
 }
 
@@ -278,53 +390,34 @@ a.imagelink {
 
 
 
-#background-video {
-    width: 1000px;
-    position: relative;
-    left: -100px; 
-    z-index: 0;
-   filter: opacity(50%);
-}
 
 .main_text img{
-    display: block;
-    height: 200px;
-    width: auto;
-    margin: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .main_text h2{
     text-align:center;
     padding: 0 0 4px;
-    
-
 }
 
 @media (max-width: 800px) {
-  #background-video { display: none; }
-  .replacevid {
-    width: 750px;
-    height: 450px;
-    background: url("/PirateBanner.png") no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
-  }
-    
-    .signupform
-{
-    background-color:  #8d99aee5;
-    width:600px;
-    margin: 0 auto;
-    border-radius: 25px;
-    padding: 1em;
-    margin-bottom: 100px;
-    z-index: 2;
-    position: relative;
 
+    .signupform
+    {
+        background-color:  #8d99aee5;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 25px;
+        padding: 1em;
+        position: relative;
+        margin-top: 1em;
+        z-index:0;
+    } 
 }
-    
-}
+
 
 .links a:hover 
 { 
@@ -337,22 +430,18 @@ a.imagelink {
 .center
 {
     width: 650px;
-display: block;
- margin: auto;   
+    display: block;
+    margin: auto;   
 }
     
 .main_text p img
 {
-    max-width:600px;
-    max-height: 300px;
-    width: auto;
-    height: auto;
-}
-
-.menu_logo
-{
-    height: 200px;
-    margin-right: 3em;
+  width: 100%;
+  height: auto;
+    max-width: 600px;
+      margin-left: auto; margin-right: auto;
+    margin-bottom: 1em;
+    display: block;
 }
 
 .menu_sm
@@ -403,6 +492,10 @@ display: block;
     border-bottom: 3px solid var(--green);
 }
 
+h2
+{
+    margin: 0.5em;
+}
 
 
 .pk a
@@ -424,20 +517,29 @@ display: block;
     border-bottom: 0px  var(--red);
 }
 
-.main_text h2 a
+
+.main_text h3
+{
+    text-align:center;
+    padding: 0 0 4px;
+    margin-bottom: 2em; margin-top: 2em;
+
+}
+
+.main_text h3 a
 { 
     color: var(--background);
-     background: var(--green);
+    background: var(--green);
     padding: 10px 20px 10px 20px; 
     border-radius: 25px;
 
 } 
 
-.main_text h2 a:hover 
+.main_text h3 a:hover 
 { 
     color: var(--red);
     border-bottom: 2px solid var(--red);
-    padding: 10px 20px 10px 20px; 
+    padding: 10px 20px 10px 20px;
 } 
 
 .main_text
