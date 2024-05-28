@@ -509,6 +509,7 @@ a.imagelink {
 .pk-row
 {
     display: flex;
+    max-width: 1400px;
 }
 
 
@@ -598,6 +599,13 @@ h2
   max-width: 1400px;
   margin-left: auto; margin-right: auto;
   text-align: justify;
+}
+
+.pk h1
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 0px solid var(--red);
 }
 
 
