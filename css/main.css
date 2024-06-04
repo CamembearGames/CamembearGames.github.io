@@ -28,7 +28,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
+
     box-sizing: border-box;
 }
 
@@ -282,7 +282,6 @@ img.resize {
 
 .links ul {
   font-family: 'Blackout', sans-serif;
-  list-style-type: none;
   padding: 0em;
   padding-bottom: 0em;
   font-size: 26px;
@@ -634,5 +633,13 @@ h2
     margin-left: 0em;
     /*border: 2px solid var(--green);*/
     }  
+    
+
 }
 
+.pk img
+{
+    max-width: 500px;
+    margin-top: 20px;
+    width: auto;
+}
